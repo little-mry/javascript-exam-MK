@@ -1,0 +1,101 @@
+.site-wrapper__planets {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.figure__container {
+    position: absolute;
+    display: flex;
+    left: -90rem;
+    justify-content: center;
+    align-items: center;
+
+    .fig-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: #428dd431;
+        width: 110rem;
+        height: 110rem;
+        border-radius: 999rem
+        ;
+    }
+
+    .fig-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #428dd454;
+        width: 100rem;
+        height: 100rem;
+        border-radius: 999rem
+        ;
+    }
+
+    .fig-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #428ED4;
+        width: 90rem;
+        height: 90rem;
+        border-radius: 999rem
+        ;
+    }
+}
+
+
+.exit-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    align-self: flex-start;
+
+    border: rgb(0, 0, 0) solid .6px;
+    border-radius: 9rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.281);
+    color: rgba(245, 245, 245, 0.774);
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.planet-info__container {
+    background-image: url(/img/stars.png);
+    background-repeat: repeat;
+    background-size: contain;
+    width: 80%;
+    height: 85%;
+    margin-right: 5rem;
+}
+
+.planet__name {
+    font-family: 'Secular One', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+}
+
+.planet__name-latin {
+    font-family: 'Lora', sans;
+    color: #ffd029;
+    font-weight: 100;
+    letter-spacing: 1rem;
+}
+
+.heading__data {
+    font-family: 'Secular One', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+}
+

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', 'sans serif';
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #0c164D, #190b22);
+}
+
+
+.site-wrapper__start {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    display: none;
+}
+
+.header__start {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 5rem;
+    align-self: flex-start;
+}
+
+.heading__start {
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: .5rem;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.subheading__start {
+    font-family: 'Lora', sans;
+    color: #ffd029;
+    font-weight: 100;
+    letter-spacing: 1rem;
+}
+
+.planet {
+  border-radius: 999px; 
+
+}
+
+.sun__container {
+    position: absolute;
+    left: -65rem;
+}
+
+.planets__container {
+    margin-left: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.saturn__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    width: 70rem;
+    height: 70rem;
+
+    background-color: #ffd029;
+}
+
+.mercury {
+    background-color: #8c8b85;
+    width: 1rem;
+    height: 1rem;
+}
+
+.venus {
+    background-color: #e7cccc;
+    width: 2rem;
+    height: 2rem;
+}
+
+.earth {
+    background-color: #428ed4;
+    width: 3rem;
+    height: 3rem;
+}
+
+.mars {
+    background-color: #ef5f5f;
+    width: 1rem;
+    height: 1rem;
+}
+
+.jupiter {
+    background-color: #e29468;
+    width: 13rem;
+    height: 13rem;
+}
+
+
+.saturn {
+    background-color: #c7aa72;
+    width: 11rem;
+    height: 11rem;
+}
+
+.saturn__orbit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-30deg);
+
+    background-color: #ffffffa6;
+    width: 18rem;
+    height: .5rem;
+    
+    border-radius: 100%;
+}
+
+
+.uranus {
+    background-color: #c9d4f1;
+    width: 6rem;
+    height: 6rem;
+}
+
+.neptune {
+    background-color: #7a91a7;
+    width: 6rem;
+    height: 6rem;
+}
+
