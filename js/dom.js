@@ -13,14 +13,14 @@ export const elements = {
     moonContainer: document.querySelector('.moon-container')
 }
 
-export const bodiesElement = {
-    sun: document.querySelector('.sun'),
-    mercury: document.querySelector('.mercury'),
-    venus: document.querySelector('.venus'),
-    earth: document.querySelector('.earth'),
-    mars: document.querySelector('.mars'),
-    jupiter: document.querySelector('.jupiter'),
-    saturn: document.querySelector('.saturn'),
-    uranus: document.querySelector('.uranus'),
-    neptunus: document.querySelector('.neptunus'),
-}
+export const bodiesElement = [
+    document.querySelector('.sun'),
+    document.querySelector('.mercury'),
+    document.querySelector('.venus'),
+    document.querySelector('.earth'),
+    document.querySelector('.mars'),
+    document.querySelector('.jupiter'),
+    document.querySelector('.saturn'),
+    document.querySelector('.uranus'),
+    document.querySelector('.neptune')
+]
