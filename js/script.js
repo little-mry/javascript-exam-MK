@@ -1,4 +1,4 @@
-import { elements, bodiesElement } from "./dom.js";
+import { elements, bodiesElement, planetColors } from "./dom.js";
 import { getKey, getPlanets} from "./apis.js";
 
 const initEventListener = async () => {
@@ -13,6 +13,7 @@ const initEventListener = async () => {
 
         if (bodyInfo) {
           displayInfo(bodyInfo);
+          changePlanetColor(bodyInfo);
         } else {
           console.log(`hittade ingen info för indexvärde ${index}`);
         }
@@ -49,5 +50,16 @@ const displayInfo = (bodyInfo) => {
     elements.planetsSite.style.display = "none";
   });
 };
+
+const changePlanetColor = (bodyInfo) => {
+  for (let index = 0; index < planetColors.length; index++) {
+    if (index == bodyInfo.id) {
+      elements.bigPlanetOne.style.background = planetColors[index].fig1 
+      elements.bigPlanetTwo.style.background = `${planetColors[index].fig2}`
+      elements.bigPlanetThree.style.background = `${planetColors[index].fig3}`
+    } 
+  }
+}
+
 
 initEventListener();

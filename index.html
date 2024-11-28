@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/planets.css">
-    <link rel="stylesheet" href="/css/mediaq.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/planets.css" />
+    <link rel="stylesheet" href="/css/mediaq.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+
     <script type="module" src="/js/script.js"></script>
 
     <title>Solaris</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="site-wrapper__start">
-        <header class="header__start">
-            <h1 class="heading__start">SOLSYSTEMET</h1>
-            <h2 class="subheading__start">SOLARIS</h2>
-        </header>
-        
-        <span class="planet-name__label planet-name__label--sun">Solen</span> 
-        <div class="sun__container">
-            <div class="planet sun">
-            </div>
-        </div>
+      <header class="header__start">
+        <h1 class="heading__start">SOLSYSTEMET</h1>
+        <h2 class="subheading__start">SOLARIS</h2>
+      </header>
 
-        <article class="planets__container">
-            <div class="planet__container">
-                <div class="planet mercury"></div>
-                <span class="planet-name__label">Merkurius</span>
-            </div>
+      <section class="sun__container">
+        <div class="planet sun"></div>
+        <span class="planet-name__label planet-name__label--sun">Solen</span>
+      </section>
 
-            <div class="planet__container">
-                <div class="planet venus"></div>
-                <span class="planet-name__label">Venus</span>
-            </div>
+      <article class="planets__container">
+        <section class="planet__container">
+          <div class="planet mercury"></div>
+          <span class="planet-name__label">Merkurius</span>
+        </section>
 
-            <div class="planet__container">
-                <div class="planet earth"></div>
-                <span class="planet-name__label">Jorden</span>
-            </div>
+        <section class="planet__container">
+          <div class="planet venus"></div>
+          <span class="planet-name__label">Venus</span>
+        </section>
 
-            <div class="planet__container">
-                <div class="planet mars"></div>
-                <span class="planet-name__label">Mars</span>
-            </div>
+        <section class="planet__container">
+          <div class="planet earth"></div>
+          <span class="planet-name__label">Jorden</span>
+        </section>
 
-            <div class="planet__container">
-                <div class="planet jupiter"></div>
-                <span class="planet-name__label">Jupiter</span>
-            </div>
+        <section class="planet__container">
+          <div class="planet mars"></div>
+          <span class="planet-name__label">Mars</span>
+        </section>
 
-            <div class="planet__container saturn__container">
-                <div class="planet saturn"></div>
-                <div class="saturn__orbit"></div>
-                <span class="planet-name__label">Saturnus</span>
-            </div>
+        <section class="planet__container">
+          <div class="planet jupiter"></div>
+          <span class="planet-name__label">Jupiter</span>
+        </section>
 
-            <div class="planet__container">
-                <div class="planet uranus"></div>
-                <span class="planet-name__label">Uranus</span>
-            </div>
+        <section class="planet__container saturn__container">
+          <div class="planet saturn">
+              <div class="saturn__orbit"></div>
+          </div>
+          <span class="planet-name__label">Saturnus</span>
+        </section>
 
-            <div class="planet__container">
-                <div class="planet neptune"></div>
-                <span class="planet-name__label">Neptunus</span>
-            </div>
-        </article>
+        <section class="planet__container">
+          <div class="planet uranus"></div>
+          <span class="planet-name__label">Uranus</span>
+        </section>
+
+        <section class="planet__container">
+          <div class="planet neptune"></div>
+          <span class="planet-name__label">Neptunus</span>
+        </section>
+      </article>
     </div>
 
     <div class="site-wrapper__planets">
-        <div class="figure__container">
-            <div class="fig-1">
-                <button class="exit-btn"><img src="img/xmark-solid.svg" alt="exit button"></button>
-                <div class="fig-2">
-                    <div class="fig-3"></div>
-                </div>
-            </div>
+      <div class="figure__container">
+        <div class="fig fig-1">
+          <button class="exit-btn">
+            <img src="img/xmark-solid.svg" alt="exit button" />
+          </button>
+          <div class="fig fig-2">
+            <div class=" fig fig-3"></div>
+          </div>
         </div>
+      </div>
 
-        <div class="stars-background"></div>
-        <article class="planet-info__container">
-            <section class="planet__info">
-                <h1 class="planet__name"></h1>
-                <h2 class="planet__name-latin"></h2>
-                <p class="planet__text"></p>
-            </section>
+      <div class="stars-background"></div>
+      <article class="planet-info__container">
+        <section class="planet__info">
+          <h1 class="planet__name"></h1>
+          <h2 class="planet__name-latin"></h2>
+          <p class="planet__text"></p>
+        </section>
 
-            <section class="planet__data">
-                <div class="column-1">
-                    <section class="data__container">
-                        <h3 class="heading__data heading__circumference">OMKREST</h3>
-                        <p class="data data__circumference"></p>
-                    </section>
-                    <section class="data__container">
-                        <h3 class="heading__data heading__temp-max">MAX TEMPERATUR</h3>
-                        <p class="data data__temp-max"></p>
-                    </section>
-                </div>
-                <div class="column-2">
-                    <section class="data__container">
-                        <h3 class="heading__data heading__km-sun">KM FRÅN SOLEN</h3>
-                        <p class="data data__km-sun"></p>
-                    </section>
-                    <section class="data__container">
-                        <h3 class="heading__data heading__temp-min">MIN TEMPERATUR</h3>
-                        <p class="data data__temp-min"></p>
-                    </section>
-                </div>
+        <section class="planet__data">
+          <div class="column-1">
+            <section class="data__container">
+              <h3 class="heading__data heading__circumference">OMKREST</h3>
+              <p class="data data__circumference"></p>
             </section>
-            <section class="planet__data planet__data--moon">
-                <section class="moon__container">
-                    <h3 class="heading__data heading__moon">MÅNAR</h3>
-                    <span class="moons"></span>
-                </section>
+            <section class="data__container">
+              <h3 class="heading__data heading__temp-max">MAX TEMPERATUR</h3>
+              <p class="data data__temp-max"></p>
             </section>
-        </article>
+          </div>
+          <div class="column-2">
+            <section class="data__container">
+              <h3 class="heading__data heading__km-sun">KM FRÅN SOLEN</h3>
+              <p class="data data__km-sun"></p>
+            </section>
+            <section class="data__container">
+              <h3 class="heading__data heading__temp-min">MIN TEMPERATUR</h3>
+              <p class="data data__temp-min"></p>
+            </section>
+          </div>
+        </section>
+        <section class="planet__data planet__data--moon">
+          <section class="moon__container">
+            <h3 class="heading__data heading__moon">MÅNAR</h3>
+            <span class="moons"></span>
+          </section>
+        </section>
+      </article>
     </div>
-</body>
+  </body>
 </html>

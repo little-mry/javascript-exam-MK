@@ -14,7 +14,6 @@ body {
     background-image: linear-gradient(to right, #0c164D, #190b22);
 }
 
-
 .site-wrapper__start {
     position: relative;
     width: 100%;
@@ -23,8 +22,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-
 }
 
 .header__start {
@@ -52,8 +49,34 @@ body {
 }
 
 .planet {
-  border-radius: 999px; 
+    position: relative;
+    border-radius: 999px; 
+    transition: transform .5s;
+}
 
+.planet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffb71030;
+    transition: transform .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.planet:hover::before {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px 3px #ffb71061;
+}
+  
+.planet:hover {
+    transform: scale(1.4);
+    color: #ffee10;
+    box-shadow: 0 0 0 20px #ffb71061;
 }
 
 .sun__container {
@@ -84,71 +107,74 @@ body {
 }
 
 .sun {
-    position: relative;
+    background: rgba(255, 208, 41, 1);
     width: 70rem;
     height: 70rem;
-  
-    background-color: #ffd029;
 }
 
 .mercury {
-    background-color: #8c8b85;
+    background: rgba(136, 136, 136, 1);
     width: 1rem;
     height: 1rem;
 }
 
 .venus {
-    background-color: #e7cccc;
+    background: rgba(231, 205, 205, 1);
     width: 2rem;
     height: 2rem;
 }
 
 .earth {
-    background-color: #428ed4;
+    background: rgba(66, 142, 212, 1);
     width: 3rem;
     height: 3rem;
 }
 
 .mars {
-    background-color: #ef5f5f;
+    background: rgba(239, 95, 95, 1);
     width: 1rem;
     height: 1rem;
 }
 
 .jupiter {
-    background-color: #e29468;
+    background: rgba(226, 148, 104, 1);
     width: 13rem;
     height: 13rem;
 }
 
 
 .saturn {
-    background-color: #c7aa72;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(199, 170, 114, 1);
     width: 11rem;
     height: 11rem;
 }
 
 .saturn__orbit {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(-30deg);
-
+    transform: rotate(-30deg);
     background-color: #ffffffa6;
     width: 18rem;
     height: .5rem;
-    
     border-radius: 100%;
+    transition: transform .5s;
 }
 
+.saturn:hover saturn__orbit{
+    transform: scale(1.4);
+}
 
 .uranus {
-    background-color: #c9d4f1;
+    background: rgba(201, 212, 241, 1);
     width: 6rem;
     height: 6rem;
 }
 
 .neptune {
-    background-color: #7a91a7;
+    background: rgba(122, 145, 167, 1);
     width: 6rem;
     height: 6rem;
 }
@@ -165,11 +191,14 @@ body {
 }
 
 .planet-name__label--sun {
-    bottom: 35rem;
-    left: 7rem;
+    bottom: 20rem;
+    left: 120%;
 } 
 
 .planet__container:hover .planet-name__label {
     visibility: visible;
 }
 
+.sun__container:hover .planet-name__label--sun {
+    visibility: visible;
+}

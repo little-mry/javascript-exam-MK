@@ -25,43 +25,38 @@
     left: -90rem;
     justify-content: center;
     align-items: center;
-
-    .fig-1 {
-        position: relative;
+    transition: left .5s;
+    
+    .fig {
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        background-color: #428dd431;
+        border-radius: 999rem
+    }
+    
+    .fig-1 {
+        position: relative;     
+        background: rgba(66, 142, 212, 0.08);
         width: 100rem;
         height: 100rem;
-        border-radius: 999rem
-        ;
     }
-
+    
     .fig-2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #428dd454;
-        width: 95rem;
+        background: rgba(66, 142, 212, 0.1);
         height: 95rem;
-        border-radius: 999rem
-        ;
+        width: 95rem;
     }
-
+    
     .fig-3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #428ED4;
+        background:rgba(66, 142, 212, 1);
         width: 90rem;
         height: 90rem;
-        border-radius: 999rem
-        ;
     }
 }
 
+.figure__container:hover {
+    left: -85rem;
+}
 
 .exit-btn {
     cursor: pointer;
