@@ -1,5 +1,7 @@
-import { elements, bodiesElement, planetColors } from "./dom.js";
-import { getKey, getPlanets} from "./apis.js";
+//main-modul som hämtar info från de andra modulerna när man klickar på en planet
+
+import { elements, bodiesElement, planetColors } from "./elem.js";
+import { getKey, getPlanets} from "./api.js";
 
 const initEventListener = async () => {
   let apiKey = null;
@@ -10,7 +12,7 @@ const initEventListener = async () => {
       try {
         const data = await getPlanets(apiKey);
         const bodyInfo = data.bodies[index];
-
+        
         if (bodyInfo) {
           displayInfo(bodyInfo);
           changePlanetColor(bodyInfo);
@@ -27,7 +29,7 @@ const initEventListener = async () => {
 const displayInfo = (bodyInfo) => {
   elements.startSite.style.display = "none";
   elements.planetsSite.style.display = "flex";
-
+  
   elements.planetName.innerText = bodyInfo.name.toUpperCase();
   elements.planetNameLatin.innerText = bodyInfo.latinName.toUpperCase();
   elements.planetText.innerText = bodyInfo.desc;
@@ -42,10 +44,10 @@ const displayInfo = (bodyInfo) => {
     elements.moonList.appendChild(moon);
     moon.innerText = element.toUpperCase();
   });
-
+  
   elements.exitBtn.addEventListener("click", () => {
     elements.moonList.innerText = "";
-
+    
     elements.startSite.style.display = "flex";
     elements.planetsSite.style.display = "none";
   });
@@ -60,6 +62,5 @@ const changePlanetColor = (bodyInfo) => {
     } 
   }
 }
-
 
 initEventListener();

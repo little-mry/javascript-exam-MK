@@ -1,7 +1,9 @@
+//modul med alla dom-element, objekt och arrayer
 export const elements = {
     startSite: document.querySelector('.site-wrapper__start'),
     planetsSite: document.querySelector('.site-wrapper__planets'),
     exitBtn: document.querySelector('.exit-btn'),
+    
     planetName: document.querySelector('.planet__name'),
     planetNameLatin: document.querySelector('.planet__name-latin'),
     planetText: document.querySelector('.planet__text'),
@@ -74,5 +76,4 @@ export const planetColors = [
       fig2: 'rgba(122, 145, 167, 0.1)',
       fig3: 'rgba(122, 145, 167, 1)'
     }
-  ]
-  
+] 
