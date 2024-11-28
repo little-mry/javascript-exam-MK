@@ -1,6 +1,5 @@
 export const elements = {
     startSite: document.querySelector('.site-wrapper__start'),
-    
     planetsSite: document.querySelector('.site-wrapper__planets'),
     exitBtn: document.querySelector('.exit-btn'),
     planetName: document.querySelector('.planet__name'),
@@ -10,7 +9,7 @@ export const elements = {
     dataMaxTemp: document.querySelector('.data__temp-max'),
     dataMinTemp: document.querySelector('.data__temp-min'),
     dataKmSun: document.querySelector('.data__km-sun'),
-    moonContainer: document.querySelector('.moon-container')
+    moonList: document.querySelector('.moons')
 }
 
 export const bodiesElement = [
