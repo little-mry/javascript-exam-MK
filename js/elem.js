@@ -11,7 +11,6 @@ export const elements = {
     dataMaxTemp: document.querySelector('.data__temp-max'),
     dataMinTemp: document.querySelector('.data__temp-min'),
     dataKmSun: document.querySelector('.data__km-sun'),
-    moonContainer: document.querySelector('.moon-container'),
     moonList: document.querySelector('.moons'),
 
     bigPlanetOne: document.querySelector('.fig-1'),

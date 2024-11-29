@@ -2,9 +2,9 @@
 
 import { elements, bodiesElement, planetColors } from "./elem.js";
 import { getKey, getPlanets} from "./api.js";
+let apiKey = null;
 
 const initEventListener = async () => {
-  let apiKey = null;
   if (!apiKey) apiKey = await getKey();
 
   for (let index = 0; index < bodiesElement.length; index++) {
@@ -38,12 +38,17 @@ const displayInfo = (bodyInfo) => {
   elements.dataMinTemp.innerText = `${bodyInfo.temp.night} °C`;
   elements.dataKmSun.innerText = `${bodyInfo.distance} KM`;
 
-  bodyInfo.moons.forEach((element) => {
-    let moon = document.createElement("p");
-    moon.className = "data";
-    elements.moonList.appendChild(moon);
-    moon.innerText = element.toUpperCase();
-  });
+  if (bodyInfo.moons.length === 0) {
+    elements.moonList.innerText = 'Denna himlakropp har inga månar'
+  } else {
+    bodyInfo.moons.forEach((element) => {    
+      let moon = document.createElement("p");
+      moon.className = "data";
+      elements.moonList.appendChild(moon);
+      moon.innerText = element 
+    });
+    
+  }
   
   elements.exitBtn.addEventListener("click", () => {
     elements.moonList.innerText = "";
