@@ -1,7 +1,7 @@
 //main-modul som hämtar info från de andra modulerna när man klickar på en planet
 import { bodiesElement } from "./elem.js";
 import { getKey, getPlanets} from "./api.js";
-import { displayInfo } from "./display.js"
+import { displayInfo , changePlanetColor } from "./display.js"
 let apiKey = null;
 
 const initEventListener = async () => {
@@ -25,5 +25,7 @@ const initEventListener = async () => {
     });
   }
 };
+
+
 
 initEventListener();

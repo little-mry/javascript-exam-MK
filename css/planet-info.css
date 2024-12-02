@@ -73,7 +73,6 @@
     background-color: rgba(0, 0, 0, 0.281);
 }
 
-
 .planet-info__container {
     display: flex;
     flex-direction: column;
@@ -111,6 +110,7 @@
     letter-spacing: .1rem;
 
 }
+
 .planet__text::-webkit-scrollbar {
     width: 0.7rem;
 }
@@ -152,7 +152,6 @@
     font-size: 1.5rem;
     font-weight: 400;
 }
-
 
 .planet__data--moon {
     flex-direction: column;

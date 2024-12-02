@@ -1,4 +1,4 @@
-//modul för att display
+//modul för  display
 import { elements, planetColors } from "./elem.js";
 
 export const displayInfo = (bodyInfo) => {
@@ -35,8 +35,8 @@ export const changePlanetColor = (bodyInfo) => {
     for (let index = 0; index < planetColors.length; index++) {
         if (index == bodyInfo.id) {
             elements.bigPlanetOne.style.background = planetColors[index].fig1 
-            elements.bigPlanetTwo.style.background = `${planetColors[index].fig2}`
-            elements.bigPlanetThree.style.background = `${planetColors[index].fig3}`
+            elements.bigPlanetTwo.style.background = planetColors[index].fig2
+            elements.bigPlanetThree.style.background = planetColors[index].fig3
         } 
     }
 }
