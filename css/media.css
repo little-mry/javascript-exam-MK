@@ -1,0 +1,36 @@
+@media (max-width: 1300px) {
+    * {
+        font-size: 1rem;
+    }    
+    .planet-info__container {
+        overflow-y: auto;
+    }
+    .planet-info__container::-webkit-scrollbar {
+        width: 0.7rem;
+    }
+    
+    .planet-info__container::-webkit-scrollbar-thumb {
+        background: rgba(162, 162, 162, 0.37);
+        border-radius: .3rem;
+        border: solid black 1px;
+    }
+    
+    .planet-info__container::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.192);
+        border: solid black 1px;
+        border-radius: .3rem;
+        width: 0.7rem;
+    } 
+    .heading__data {
+        font-size: 1.2rem;
+    }
+
+
+    .planet {
+        scale: .8;
+    }
+
+    .sun__container {
+        left: -58rem;
+    }
+}
